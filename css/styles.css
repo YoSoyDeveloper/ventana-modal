@@ -1,0 +1,110 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+#btn-open {
+	border: none;
+	padding: .6rem 2rem;
+	border-radius: 20px;
+	cursor: pointer;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	font-weight: bold;
+	transition: all 200ms;
+}
+#btn-open:hover {
+	background-color: #333;
+	color: #fff;
+	box-shadow: 0 5px 10px #aaa;
+}
+
+
+.modal {
+	transition: all 400ms;
+
+	background-color: #fff;
+	width: 70%;
+	max-width: 500px;
+	box-shadow: 0 0 10px #ccc;
+	border-radius: 10px;
+
+	position: absolute;
+	top: 50%;
+	left: -100%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 2rem;
+}
+
+.modal p {
+	margin-bottom: 1rem;
+}
+
+.icons {
+	display: flex;
+}
+
+.icon {
+	margin: .5rem;
+	font-size: 1.6rem;
+
+	width: 50px;
+	height: 50px;
+	background-color: #aaa;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 200ms;
+}
+
+.icon:hover {
+	box-shadow: 0 5px 10px #aaa;
+	opacity: .8;
+}
+
+.icon a {
+	color: #fff;
+}
+
+.icon.facebook {
+	background: #4867aa;
+}
+.icon.twitter {
+	background: #00a2f3;
+}
+.icon.github {
+	background: #f34f29;
+}
+
+
+.icon-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #777;
+	cursor: pointer;
+}
+
+
+.active {
+	left: 50%;
+}
